@@ -1,6 +1,6 @@
 # stikerMaker-WhatsappWeb
 stiker maker for whatsapp web
-
+[Install Script in GreasyFork for Tampermonkey](https://greasyfork.org/es/scripts/527894-whatsapp-sticker-creator-with-custom-maker-enhanced])
 # How to use
 
 1. Download and install script
