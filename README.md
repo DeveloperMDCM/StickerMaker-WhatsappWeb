@@ -15,5 +15,5 @@ stiker maker for whatsapp web
 10. Enjoy your sticker
 
 image example
-![image]()
+![image](https://github.com/DeveloperMDCM/StickerMaker-WhatsappWeb/blob/main/image.png)
 
