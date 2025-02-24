@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         WhatsApp Sticker Creator with Custom Maker Enhanced
-// @version      1.0
+// @version      1.1
 // @description  Create custom stickers in WhatsApp Web.
 // @description:af  Skep persoonlike stickertjies in WhatsApp Web.
 // @description:ar  إنشاء ملصقات مخصصة في WhatsApp Web.
@@ -76,7 +76,7 @@
 // @description:zh-TW 在WhatsApp Web中建立自訂貼紙。
 // @author       DeveloperMDCM
 // @match        https://web.whatsapp.com/
-// @icon         https://www.google.com/s2/favicons?sz=64&domain=youtube.com
+// @icon         https://static-00.iconduck.com/assets.00/whatsapp-icon-1020x1024-iykox85t.png
 // @grant        GM_addStyle
 // @run-at       document-end
 // @compatible chrome
@@ -84,6 +84,8 @@
 // @compatible opera
 // @compatible safari
 // @compatible edge
+// @downloadURL https://update.greasyfork.org/scripts/527894/WhatsApp%20Sticker%20Creator%20with%20Custom%20Maker%20Enhanced.user.js
+// @updateURL https://update.greasyfork.org/scripts/527894/WhatsApp%20Sticker%20Creator%20with%20Custom%20Maker%20Enhanced.user.js
 // @license MIT
 // @namespace https://github.com/DeveloperMDCM/
 // @homepage     https://github.com/DeveloperMDCM/
@@ -91,14 +93,14 @@
 
 (function () {
     'use strict';
-    console.log('Scrip en ejecución by: DeveloperMDCM');
+    console.log('Script en ejecución by: DeveloperMDCM');
     const HEADER_STYLE = 'color: #F00; font-size: 24px; font-family: sans-serif;';
     const MESSAGE_STYLE = 'color: #00aaff; font-size: 16px; font-family: sans-serif;';
     const CODE_STYLE = 'font-size: 14px; font-family: monospace;';
   
     console.log(
-      '%cYoutube Tools Extension NEW UI\n' +
-        '%cRun %c(v2.3.2)\n' +
+      '%cStiker Maker for Whatsapp Web\n' +
+        '%cRun %c(v1.0)\n' +
         'By: DeveloperMDCM.',
       HEADER_STYLE,
       CODE_STYLE,
