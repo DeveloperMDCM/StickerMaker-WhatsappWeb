@@ -1,78 +1,149 @@
 // ==UserScript==
 // @name         WhatsApp Sticker Creator with Custom Maker Enhanced
 // @version      1.1
-// @description  Create custom stickers in WhatsApp Web.
-// @description:af  Skep persoonlike stickertjies in WhatsApp Web.
-// @description:ar  إنشاء ملصقات مخصصة في WhatsApp Web.
-// @description:az  WhatsApp Web-də fərdi stikerlər yaradın.
-// @description:bg  Създаване на персонализирани стикери в WhatsApp Web.
-// @description:bn  WhatsApp Web-এ কাস্টম স্টিকার তৈরি করুন।
-// @description:bs  Kreirajte prilagođene naljepnice u WhatsApp Webu.
-// @description:ca  Crea gomets personalitzats a WhatsApp Web.
-// @description:cs  Vytvářejte vlastní nálepky ve WhatsApp Webu.
-// @description:cy  Creu stickeriaid addasedig yn WhatsApp Web.
-// @description:da  Opret brugerdefinerede stickers i WhatsApp Web.
-// @description:de  Erstellen Sie benutzerdefinierte Aufkleber in WhatsApp Web.
-// @description:el  Δημιουργήστε προσαρμοσμένα αυτοκόλλητα στο WhatsApp Web.
-// @description:en  Create custom stickers in WhatsApp Web.
-// @description:eo  Kreu proprajn glumarkojn en WhatsApp Web.
-// @description:es  Crear stickers personalizados en WhatsApp Web.
-// @description:et  Looge WhatsApp Web-is kohandatud kleepsud.
-// @description:eu  Sortu pertsonalizatutako itsaskiak WhatsApp Web-en.
-// @description:fa  ایجاد برچسب‌های سفارشی در WhatsApp Web.
-// @description:fi  Luo mukautettuja tarranauhoja WhatsApp Webiin.
-// @description:fr  Créer des autocollants personnalisés dans WhatsApp Web.
-// @description:gl  Crea adhesivos personalizados en WhatsApp Web.
-// @description:gu  WhatsApp Web માં કસ્ટમ સ્ટિકર્સ બનાવો.
-// @description:he  צור מדבקות מותאמות אישית ב-WhatsApp Web.
-// @description:hi  WhatsApp Web में कस्टम स्टिकर बनाएं।
-// @description:hr  Stvorite prilagođene naljepnice u WhatsApp Webu.
-// @description:hu  Hozzon létre egyéni matricákat a WhatsApp Webben.
-// @description:id  Buat stiker kustom di WhatsApp Web.
-// @description:it  Crea sticker personalizzati su WhatsApp Web.
-// @description:ja  WhatsApp Webでカスタムステッカーを作成します。
-// @description:ka  შექმენით მორგებული სტიკერები WhatsApp Web-ში.
-// @description:kk  WhatsApp Web-де тұтынушыға сәйкес таңбалар жасаңыз.
-// @description:km  បង្កើតស្លាកតាមតម្រូវការនៅលើ WhatsApp Web។
-// @description:kn  WhatsApp Web ನಲ್ಲಿ ಅನುಗುಣವಾದ ಸ್ಟಿಕರ್‌ಗಳನ್ನು ರಚಿಸಿ.
-// @description:ko  WhatsApp 웹에서 사용자 정의 스티커를 만듭니다.
-// @description:ku  Di WhatsApp Web de stikerên xwerû biafirîne.
-// @description:ky  WhatsApp Web'de кардардын көңүлүнө ылайыктуу стикерлерди түзгүлө.
-// @description:lt  Sukurkite pasirinktinius lipdukus „WhatsApp Web“.
-// @description:lv  Izveidojiet pielāgotas uzlīmes WhatsApp tīmeklī.
-// @description:mk  Креирајте прилагодени стикери во WhatsApp Web.
-// @description:ml  WhatsApp വെബിൽ ആവശ്യമനുസരിച്ച് സ്റ്റിക്കർ സൃഷ്ടിക്കുക.
-// @description:mn  WhatsApp Web дээр өөрийн хүссэн шошго үүсгэх.
-// @description:mr  WhatsApp Web मध्ये कस्टम स्टिकर तयार करा.
-// @description:ms  Cipta pelekat tersuai di WhatsApp Web.
-// @description:my  WhatsApp Web တွင်စိတ်ကြိုက်သတ်မှတ်ထားသော နှိပ်ပုံများဖန်တီးပါ။
-// @description:nb  Lag egne klistremerker i WhatsApp Web.
-// @description:ne  WhatsApp वेबमा अनुकूलित स्टिकरहरू सिर्जना गर्नुहोस्।
-// @description:nl  Maak aangepaste stickers in WhatsApp Web.
-// @description:nn  Lag tilpassa klistremerke i WhatsApp Web.
-// @description:no  Lag egne klistremerker i WhatsApp Web.
-// @description:pa  WhatsApp ਵੈਬ ਵਿੱਚ ਕਸਟਮ ਸਟਿੱਕਰ ਬਣਾਓ।
-// @description:pl  Twórz niestandardowe naklejki w WhatsApp Web.
-// @description:pt  Criar adesivos personalizados no WhatsApp Web.
-// @description:ro  Creați autocolante personalizate în WhatsApp Web.
-// @description:ru  Создавайте собственные стикеры в WhatsApp Web.
-// @description:si  WhatsApp Web හි විශේෂිත සටිකර සාදන්න.
-// @description:sk  Vytvorte vlastné nálepky v službe WhatsApp Web.
-// @description:sl  Ustvarite prilagojene nalepke v WhatsApp Spletu.
-// @description:sq  Krijoni ngjitës të personalizuar në WhatsApp Web.
-// @description:sr  Направите прилагодљиве налепнице у ВхатсАпп Вебу.
-// @description:sv  Skapa anpassade klistermärken i WhatsApp Web.
-// @description:sw  Tengeneza lebo maalum katika WhatsApp Web.
-// @description:ta  WhatsApp வலைதளத்தில் தனிப்பயனாக அட்டைகள் உருவாக்கவும்.
-// @description:te  WhatsApp వెబ్‌లో అనుకూలిత స్టికర్లు సృష్టించండి.
+// @name:af Persoonlike Stickertjies
+// @description:af Skep persoonlike stickertjies in WhatsApp Web.
+// @name:ar ملصقات مخصصة
+// @description:ar إنشاء ملصقات مخصصة في WhatsApp Web.
+// @name:az Fərdi stikerlər
+// @description:az WhatsApp Web-də fərdi stikerlər yaradın.
+// @name:bg Персонализирани стикери
+// @description:bg Създаване на персонализирани стикери в WhatsApp Web.
+// @name:bn কাস্টম স্টিকার
+// @description:bn WhatsApp Web-এ কাস্টম স্টিকার তৈরি করুন।
+// @name:bs Prilagođene naljepnice
+// @description:bs Kreirajte prilagođene naljepnice u WhatsApp Webu.
+// @name:ca Gomets personalitzats
+// @description:ca Crea gomets personalitzats a WhatsApp Web.
+// @name:cs Vlastní nálepky
+// @description:cs Vytvářejte vlastní nálepky ve WhatsApp Webu.
+// @name:cy Stickeriaid addasedig
+// @description:cy Creu stickeriaid addasedig yn WhatsApp Web.
+// @name:da Brugerdefinerede stickers
+// @description:da Opret brugerdefinerede stickers i WhatsApp Web.
+// @name:de Benutzerdefinierte Aufkleber
+// @description:de Erstellen Sie benutzerdefinierte Aufkleber in WhatsApp Web.
+// @name:el Προσαρμοσμένα αυτοκόλλητα
+// @description:el Δημιουργήστε προσαρμοσμένα αυτοκόλλητα στο WhatsApp Web.
+// @name:en Custom Stickers
+// @description:en Create custom stickers in WhatsApp Web.
+// @name:eo Propraj glumarkoj
+// @description:eo Kreu proprajn glumarkojn en WhatsApp Web.
+// @name:es Stickers personalizados
+// @description:es Crear stickers personalizados en WhatsApp Web.
+// @name:et Kohandatud kleepsud
+// @description:et Looge WhatsApp Web-is kohandatud kleepsud.
+// @name:eu Pertsonalizatutako itsaskiak
+// @description:eu Sortu pertsonalizatutako itsaskiak WhatsApp Web-en.
+// @name:fa برچسب‌های سفارشی
+// @description:fa ایجاد برچسب‌های سفارشی در WhatsApp Web.
+// @name:fi Mukautetut tarrat
+// @description:fi Luo mukautettuja tarranauhoja WhatsApp Webiin.
+// @name:fr Autocollants personnalisés
+// @description:fr Créer des autocollants personnalisés dans WhatsApp Web.
+// @name:gl Adhesivos personalizados
+// @description:gl Crea adhesivos personalizados en WhatsApp Web.
+// @name:gu કસ્ટમ સ્ટિકર્સ
+// @description:gu WhatsApp Web માં કસ્ટમ સ્ટિકર્સ બનાવો.
+// @name:he מדבקות מותאמות אישית
+// @description:he צור מדבקות מותאמות אישית ב-WhatsApp Web.
+// @name:hi कस्टम स्टिकर
+// @description:hi WhatsApp Web में कस्टम स्टिकर बनाएं।
+// @name:hr Prilagođene naljepnice
+// @description:hr Stvorite prilagođene naljepnice u WhatsApp Webu.
+// @name:hu Egyéni matricák
+// @description:hu Hozzon létre egyéni matricákat a WhatsApp Webben.
+// @name:id Stiker kustom
+// @description:id Buat stiker kustom di WhatsApp Web.
+// @name:it Sticker personalizzati
+// @description:it Crea sticker personalizzati su WhatsApp Web.
+// @name:ja カスタムステッカー
+// @description:ja WhatsApp Webでカスタムステッカーを作成します。
+// @name:ka მორგებული სტიკერები
+// @description:ka შექმენით მორგებული სტიკერები WhatsApp Web-ში.
+// @name:kk Таңбалар
+// @description:kk WhatsApp Web-де тұтынушыға сәйкес таңбалар жасаңыз.
+// @name:km ស្លាកតាមតម្រូវការ
+// @description:km បង្កើតស្លាកតាមតម្រូវការនៅលើ WhatsApp Web។
+// @name:kn ಅನುಗುಣವಾದ ಸ್ಟಿಕರ್‌ಗಳು
+// @description:kn WhatsApp Web ನಲ್ಲಿ ಅನುಗುಣವಾದ ಸ್ಟಿಕರ್‌ಗಳನ್ನು ರಚಿಸಿ.
+// @name:ko 사용자 정의 스티커
+// @description:ko WhatsApp 웹에서 사용자 정의 스티커를 만듭니다.
+// @name:ku Stikerên xwerû
+// @description:ku Di WhatsApp Web de stikerên xwerû biafirîne.
+// @name:ky Көнүлгө ылайыктуу стикерлер
+// @description:ky WhatsApp Web'de кардардын көңүлүнө ылайыктуу стикерлерди түзгүлө.
+// @name:lt Pasirinktini lipdukai
+// @description:lt Sukurkite pasirinktinius lipdukus „WhatsApp Web“.
+// @name:lv Pielāgotas uzlīmes
+// @description:lv Izveidojiet pielāgotas uzlīmes WhatsApp tīmeklī.
+// @name:mk Прилагодени стикери
+// @description:mk Креирајте прилагодени стикери во WhatsApp Web.
+// @name:ml ആവശ്യമനുസരിച്ച് സ്റ്റിക്കർ
+// @description:ml WhatsApp വെബിൽ ആവശ്യമനുസരിച്ച് സ്റ്റിക്കർ സൃഷ്ടിക്കുക.
+// @name:mn Өөрийн хүссэн шошго
+// @description:mn WhatsApp Web дээр өөрийн хүссэн шошго үүсгэх.
+// @name:mr कस्टम स्टिकर
+// @description:mr WhatsApp Web मध्ये कस्टम स्टिकर तयार करा.
+// @name:ms Pelekat tersuai
+// @description:ms Cipta pelekat tersuai di WhatsApp Web.
+// @name:my စိတ်ကြိုက်နှိပ်ပုံများ
+// @description:my WhatsApp Web တွင်စိတ်ကြိုက်သတ်မှတ်ထားသော နှိပ်ပုံများဖန်တီးပါ။
+// @name:nb Egne klistremerker
+// @description:nb Lag egne klistremerker i WhatsApp Web.
+// @name:ne अनुकूलित स्टिकरहरू
+// @description:ne WhatsApp वेबमा अनुकूलित स्टिकरहरू सिर्जना गर्नुहोस्।
+// @name:nl Aangepaste stickers
+// @description:nl Maak aangepaste stickers in WhatsApp Web.
+// @name:nn Tilpassa klistremerke
+// @description:nn Lag tilpassa klistremerke i WhatsApp Web.
+// @name:no Egne klistremerker
+// @description:no Lag egne klistremerker i WhatsApp Web.
+// @name:pa ਕਸਟਮ ਸਟਿੱਕਰ
+// @description:pa WhatsApp ਵੈਬ ਵਿੱਚ ਕਸਟਮ ਸਟਿੱਕਰ ਬਣਾਓ।
+// @name:pl Niestandardowe naklejki
+// @description:pl Twórz niestandardowe naklejki w WhatsApp Web.
+// @name:pt Adesivos personalizados
+// @description:pt Criar adesivos personalizados no WhatsApp Web.
+// @name:ro Autocolante personalizate
+// @description:ro Creați autocolante personalizate în WhatsApp Web.
+// @name:ru Стикеры
+// @description:ru Создавайте собственные стикеры в WhatsApp Web.
+// @name:si විශේෂිත සටිකර
+// @description:si WhatsApp Web හි විශේෂිත සටිකර සාදන්න.
+// @name:sk Vlastné nálepky
+// @description:sk Vytvorte vlastné nálepky v službe WhatsApp Web.
+// @name:sl Prilagojene nalepke
+// @description:sl Ustvarite prilagojene nalepke v WhatsApp Spletu.
+// @name:sq Ngjitës të personalizuar
+// @description:sq Krijoni ngjitës të personalizuar në WhatsApp Web.
+// @name:sr Прилагодљиве налепнице
+// @description:sr Направите прилагодљиве налепнице у ВхатсАпп Вебу.
+// @name:sv Anpassade klistermärken
+// @description:sv Skapa anpassade klistermärken i WhatsApp Web.
+// @name:sw Lebo maalum
+// @description:sw Tengeneza lebo maalum katika WhatsApp Web.
+// @name:ta தனிப்பயனாக அட்டைகள்
+// @description:ta WhatsApp வலைதளத்தில் தனிப்பயனாக அட்டைகள் உருவாக்கவும்.
+// @name:te అనుకూలిత స్టికర్లు
+// @description:te WhatsApp వెబ్‌లో అనుకూలిత స్టికర్లు సృష్టించండి.
+// @name:th สติกเกอร์แบบกำหนดเอง
 // @description:th สร้างสติกเกอร์แบบกำหนดเองใน WhatsApp Web
-// @description:tr  WhatsApp Web'de özel etiketler oluşturun.
-// @description:uk  Створюйте власні наклейки в WhatsApp Web.
-// @description:ur  WhatsApp ویب میں کسٹم اسٹکر بنائیں۔
-// @description:uz  WhatsApp Web-da maxsus stikerlar yarating.
-// @description:vi  Tạo nhãn dán tùy chỉnh trong WhatsApp Web.
-// @description:zh  在WhatsApp Web中创建自定义贴纸。
+// @name:tr Özel etiketler
+// @description:tr WhatsApp Web'de özel etiketler oluşturun.
+// @name:uk Власні наклейки
+// @description:uk Створюйте власні наклейки в WhatsApp Web.
+// @name:ur کسٹم اسٹکر
+// @description:ur WhatsApp ویب میں کسٹم اسٹکر بنائیں۔
+// @name:uz Maxsus stikerlar
+// @description:uz WhatsApp Web-da maxsus stikerlar yarating.
+// @name:vi Nhãn dán tùy chỉnh
+// @description:vi Tạo nhãn dán tùy chỉnh trong WhatsApp Web.
+// @name:zh 自定义贴纸
+// @description:zh 在WhatsApp Web中创建自定义贴纸。
+// @name:zh-CN 自定义贴纸
 // @description:zh-CN 在WhatsApp Web中创建自定义贴纸。
+// @name:zh-TW 自訂貼紙
 // @description:zh-TW 在WhatsApp Web中建立自訂貼紙。
 // @author       DeveloperMDCM
 // @match        https://web.whatsapp.com/
